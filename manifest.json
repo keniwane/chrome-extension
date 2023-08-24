@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Something Cool",
+    "version": "1.0",
+    "description": "Something else that's cool",
+    "permissions": [
+        "activeTab",
+        "https://api.tosdr.org/"
+    ],
+    "host_permissions": [
+        "https://api.tosdr.org/"
+    ],
+    "content_scripts": []
+}
