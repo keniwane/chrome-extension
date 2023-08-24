@@ -9,8 +9,8 @@
     "host_permissions": [
         "https://api.tosdr.org/"
     ],
-    "action": [
+    "action": {
         "default_popup": "popup.html",
-        "default_icon":
-    ]
+        "default_icon": "Icons/Sid.jpg"
+    }
 }
