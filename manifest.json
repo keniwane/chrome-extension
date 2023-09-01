@@ -1,16 +1,23 @@
 {
     "manifest_version": 3,
-    "name": "Something Cool",
+    "name": "JSON.derulo",
     "version": "1.0",
-    "description": "Something else that's cool",
+    "description": "Displays a summary of the ToS and its rating.",
     "permissions": [
-        "tabs"
+        "activeTab",
+        "storage"
     ],
     "host_permissions": [
-        "https://api.tosdr.org/"
+        "http://*/*",
+        "https://*/*"
     ],
+    "background": {
+        "service_worker": "background.js"
+    },
     "action": {
         "default_popup": "popup.html",
-        "default_icon": "Icons/Sid.jpg"
+        "default_icon": {
+            "16": "Icons/Sid.jpg"
+        }
     }
 }
