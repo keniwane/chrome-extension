@@ -13,7 +13,7 @@ async function getServiceDetails(domain) {
             const serviceDetails = responseData[`tosdr/review/${cleanDomain}`];
             const serviceId = serviceDetails.id; // Extract the id
 
-            // Now you can make another API call using the service ID to get full details
+            // make another API call using the service ID to get more details
             const fullServiceDetails = await getToSDetails(serviceId);
             return fullServiceDetails;
         } else {

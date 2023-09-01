@@ -21,11 +21,11 @@
 // });
 
 
-// Listen for messages from the background script
+
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    // Display the TLDR if the message action is 'displayTLDR'
+   
     if (message.action === 'displayTLDR' && message.tldr) {
-        const tldrElement = document.getElementById('tldr'); // Replace with your element's ID
+        const tldrElement = document.getElementById('tldr'); 
         if (tldrElement) {
             tldrElement.textContent = message.tldr;
         }
